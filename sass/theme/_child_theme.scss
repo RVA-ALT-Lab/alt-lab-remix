@@ -82,7 +82,7 @@ PROJECT PAGE
   display: block;
 }
 
-.alt-proj-button a{
+.alt-proj-button a {
   text-decoration:none;
 }
 
@@ -509,6 +509,7 @@ NAVIGATION
 }
 
 .home-details {
+  background: #f1f1f1;
   font-size: .4em;
   color: #000;
   font-family: Roboto;
@@ -531,9 +532,14 @@ NAVIGATION
   padding: 0;
   text-align: center;
 }
+
 .home-resources-stats {
   padding: 0;
   text-align: left;
+}
+
+.tribe-mini-calendar-event .list-date {
+  padding: 1px;
 }
 
 /*********************************
@@ -622,7 +628,6 @@ TOP CONTENT UNDER NAVIGATION
   //min-height: 70px;
   padding: 0;
 }
-
 
 /*.about-us-left {
   float: left;
