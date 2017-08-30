@@ -83,7 +83,7 @@ jQuery(document).ready(function() {
 		event.preventDefault();
     jQuery('html, body').animate({
         scrollTop: jQuery( jQuery(this).attr('href') ).offset().top
-    }, 1000);
+    }, 1500);
     return false;
   });
 });
