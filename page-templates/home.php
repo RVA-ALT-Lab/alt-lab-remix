@@ -180,8 +180,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="line"></div>
 								<div class="row">
-									<div class="col-sm-12 home-content-below what-we-can-do-text">More recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</div>
+									<div class="col-sm-12 home-content-below what-we-can-do-text"><p>The Internet is a big place. We'll explore fertile grounds for multimedia content, advanced search patterns to find better content faster, and ways to save and organize all the great things you've found.</p><p>Learn techniques that will make your searching more effiecent.</p>
+									</div>
 								</div>
 					</div>
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
@@ -195,7 +195,8 @@ It is a long established fact that a reader will be distracted by the readable c
 						</div>
 						<div class="line"></div>
 								<div class="row">
-									<div class="col-sm-12 home-content-below what-we-can-do-text">The term "active learning" has been ballyhooed for some time now in higher education. It is often used as an umbrella term for a vast range of activities and techniques that endeavor to get students to do more in the classroom than just take notes, and to do more outside of the classroom than just memorize their notes.<br><br>This workshop is designed to provide participants with a research-based rationale for why active learning works, an introduction to a wide range of techniques that are suitable to various contexts, and a better understanding of how to select active learning techniques based on one's learning outcomes.<br><br></div>
+									<div class="col-sm-12 home-content-below what-we-can-do-text"><p>The term "active learning" has been ballyhooed for some time now in higher education. It is often used as an umbrella term for a vast range of activities and techniques that endeavor to get students to do more in the classroom than just take notes, and to do more outside of the classroom than just memorize their notes.</p><p>This workshop is designed to provide participants with a research-based rationale for why active learning works, an introduction to a wide range of techniques that are suitable to various contexts, and a better understanding of how to select active learning techniques based on one's learning outcomes.</p>
+									</div>
 								</div>
 					</div>
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
@@ -209,7 +210,8 @@ It is a long established fact that a reader will be distracted by the readable c
 						</div>
 						<div class="line"></div>
 									<div class="row">
-										<div class="col-sm-12 home-content-below what-we-can-do-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</div>
+										<div class="col-sm-12 home-content-below what-we-can-do-text"><p>Learn how a Rampages.us site can enrich your course, whether it's an online one or a hybrid. Expand beyond the tools you may already know about and try some new innovative experiential techniques to engage with your students.</p><p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+										</div>
 									</div>
 						</div>
 					</div>
