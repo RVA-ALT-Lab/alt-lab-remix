@@ -9599,7 +9599,7 @@ HOME PAGE
   color: #000; }
 
 .we-create {
-  padding-top: 90px;
+  padding-top: 120px;
   font-size: 2em;
   font-family: Roboto;
   font-weight: 500;
@@ -9624,7 +9624,7 @@ HOME PAGE
 .hand {
   position: absolute;
   bottom: -10px;
-  left: 290px; }
+  left: 110px; }
 
 .gear {
   position: absolute;
@@ -9668,6 +9668,15 @@ NAVIGATION
   border-bottom: 1px dashed #9B9B9B;
   padding-top: 10px; }
 
+.home-details-projects {
+  background: linear-gradient(to left, #f1f1f1, #f1f1f1 85%, #fafafa); }
+
+.home-details-aboutus {
+  background: linear-gradient(to right, #f1f1f1, #f1f1f1 85%, #fafafa); }
+
+.aboutus-white {
+  background: linear-gradient(to right, white, white 85%, #fafafa); }
+
 .home-projects-content {
   padding: 0; }
 
@@ -9682,8 +9691,8 @@ NAVIGATION
   padding: 0;
   text-align: left; }
 
-.tribe-mini-calendar-event .list-date {
-  padding: 1px; }
+.type-tribe_events .tribe-mini-calendar-event .list-date {
+  padding: 2px; }
 
 /*********************************
 TOP CONTENT UNDER NAVIGATION
@@ -9700,7 +9709,9 @@ TOP CONTENT UNDER NAVIGATION
   text-transform: uppercase; }
 
 .tribe-events-widget-link {
-  font-size: .7em; }
+  text-align: center;
+  font-size: .7em;
+  padding: 10px 0 0 0; }
 
 .top-info-blurb .col-sm-3 {
   padding: 10px; }
@@ -9711,11 +9722,49 @@ TOP CONTENT UNDER NAVIGATION
   height: auto;
   margin: auto; }
 
+/*
 .online-logo {
-  padding-top: 20px;
-  padding-bottom: 0px;
-  text-align: center; }
+  padding-top:20px;
+  padding-bottom:0px;
+  text-align:center;
+}
+*/
+/*.online-logo {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	max-width: 190px;
+}*/
+.swap img:last-child {
+  display: none; }
 
+.swap:hover img:first-child {
+  display: none; }
+
+.swap:hover img:last-child {
+  display: inline-block; }
+
+/*
+#online-logo .black {
+	position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#online-logo .yellow {
+	position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+	opacity: 0;
+}
+
+.black:hover {
+	opacity: 0;
+}
+
+.yellow:hover {
+	opacity: 1;
+}
+*/
 .border-time-left {
   border-width: 1px;
   border-color: #9B9B9B;

@@ -439,7 +439,7 @@ HOME PAGE
 }
 
 .we-create {
-  padding-top: 90px;
+  padding-top: 120px;
   font-size: 2em;
   font-family: Roboto;
   font-weight: 500;
@@ -468,7 +468,7 @@ HOME PAGE
 .hand {
   position: absolute;
   bottom: -10px;
-  left: 290px;
+  left: 110px;
 }
 
 .gear {
@@ -499,7 +499,7 @@ NAVIGATION
   background-color: #fff;
 }
 
-.home-title{
+.home-title {
   font-family: Oswald;
   font-weight: 400;
   font-size: 1.5em;
@@ -520,6 +520,18 @@ NAVIGATION
   padding-top: 10px;
 }
 
+.home-details-projects {
+  background: linear-gradient(to left, #f1f1f1, #f1f1f1 85%, #fafafa)
+}
+
+.home-details-aboutus {
+  background: linear-gradient(to right, #f1f1f1, #f1f1f1 85%, #fafafa)
+}
+
+.aboutus-white {
+  background: linear-gradient(to right, white, white 85%, #fafafa)
+}
+
 .home-projects-content {
   padding: 0;
 }
@@ -538,8 +550,8 @@ NAVIGATION
   text-align: left;
 }
 
-.tribe-mini-calendar-event .list-date {
-  padding: 1px;
+.type-tribe_events .tribe-mini-calendar-event .list-date {
+  padding: 2px;
 }
 
 /*********************************
@@ -560,8 +572,11 @@ TOP CONTENT UNDER NAVIGATION
 }
 
 .tribe-events-widget-link {
+  text-align:center;
   font-size: .7em;
+  padding: 10px 0 0 0;
 }
+
 .top-info-blurb .col-sm-3 {
   padding: 10px;
 }
@@ -572,12 +587,55 @@ TOP CONTENT UNDER NAVIGATION
   height: auto;
   margin: auto;
 }
-
+/*
 .online-logo {
   padding-top:20px;
   padding-bottom:0px;
   text-align:center;
 }
+*/
+/*.online-logo {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	max-width: 190px;
+}*/
+
+
+.swap img:last-child {
+  display:none
+}
+
+.swap:hover img:first-child {
+  display:none
+}
+
+.swap:hover img:last-child {
+  display:inline-block
+}
+
+/*
+#online-logo .black {
+	position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#online-logo .yellow {
+	position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+	opacity: 0;
+}
+
+.black:hover {
+	opacity: 0;
+}
+
+.yellow:hover {
+	opacity: 1;
+}
+*/
+
 
 .border-time-left {
   border-width: 1px;

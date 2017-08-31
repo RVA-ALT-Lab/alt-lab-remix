@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
           	  <div class="col-sm-12 home-title">
           		   <a href="../altlabnew/project/">Projects</a>
           	  </div>
-	          <div class="col-sm-12 home-details">
+	          <div class="col-sm-12 home-details home-details-projects">
 	          	See what VCU faculty are doing with us on Rampages and beyond.
 	          </div>
 	          <div class="col-sm-12 home-projects-content">
@@ -92,8 +92,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 	          	Find links to more of our online resources and general support help when you need it.
 	          </div>
 	          <div class="col-sm-12 home-resources-content">
-							<div class="home-resources-content border-time-center">
-	          	  <a href="https://online.vcu.edu"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/Online@VCU-Logo-171.png" class="img-responsive home-resources-img"></a>
+							<div class="home-resources-content border-time-center" id="online-logo">
+	          	  <a class="swap" href="https://online.vcu.edu">
+									<img class="img-responsive home-resources-img" src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-black.png">
+									<img class="img-responsive home-resources-img" src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-color.png">
+								</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
 								<a href="https://rampages.us">RAMPAGES</a>
@@ -116,7 +119,7 @@ $container = get_theme_mod( 'understrap_container_type' );
           	  <div class="col-sm-12 home-title">
           	  	<a href="../altlabnew/about-us/">About Us</a>
           	  </div>
-	          <div class="col-sm-12 home-details">
+	          <div class="col-sm-12 home-details home-details-aboutus">
 	          	Get to know us a little bit and then let’s make something together.
 	          </div>
 	          <div class="col-sm-12 home-about-content">
@@ -126,7 +129,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<?php
 	          	$args = array(
 	          		'post_type' => 'faculty',
-	          		'posts_per_page' => 8,
+	          		'posts_per_page' => 10,
 	          		'orderby' => 'rand',
 	          		'meta_key' => '_thumbnail_id',
 	          		);
