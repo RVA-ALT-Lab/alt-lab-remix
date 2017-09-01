@@ -108,7 +108,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<a href="https://rampages.us">One FAQ</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
-	          	  	<a href="https://rampages.us">Stats! <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stat.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/stat.png"></a>
+	          	  	<a class="swap" href="https://rampages.us">Stats!
+										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.png">
+										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.png">
+									</a>
 								<div class="home-tiny-details">See data about our data!</div>
 							</div>
 	          </div>

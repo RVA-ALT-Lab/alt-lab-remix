@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="27px" viewBox="0 0 43 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ALT-Lab-main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy" transform="translate(-973.000000, -139.000000)">
+            <g id="Group-15" transform="translate(973.000000, 139.000000)">
+                <g id="Group-13-Copy-2">
+                    <polyline id="Path-5" stroke="#00B3BE" points="3.59716797 10.6140137 9.51904297 7.56103516 15.4528809 9.56225586 21.5 5.62353516 27.6391602 3.50805664 33.6374512 5.62353516 39.6364746 1.34204102"></polyline>
+                    <circle id="Oval-3-Copy-5" fill="#00B3BE" cx="21.5" cy="5.5" r="1.5"></circle>
+                    <circle id="Oval-3-Copy-10" fill="#00B3BE" cx="33.5" cy="5.5" r="1.5"></circle>
+                    <circle id="Oval-3-Copy-11" fill="#00B3BE" cx="27.5" cy="3.5" r="1.5"></circle>
+                    <circle id="Oval-3-Copy-12" fill="#00B3BE" cx="39.5" cy="1.5" r="1.5"></circle>
+                    <circle id="Oval-3-Copy-6" fill="#00B3BE" cx="15.5" cy="9.5" r="1.5"></circle>
+                    <circle id="Oval-3-Copy-7" fill="#00B3BE" cx="9.5" cy="7.5" r="1.5"></circle>
+                    <circle id="Oval-3-Copy-8" fill="#00B3BE" cx="3.5" cy="10.5" r="1.5"></circle>
+                    <rect id="Rectangle-11-Copy-4" fill="#00B3BE" x="2" y="15" width="3" height="6"></rect>
+                    <rect id="Rectangle-11-Copy-5" fill="#00B3BE" x="8" y="12" width="3" height="9"></rect>
+                    <rect id="Rectangle-11-Copy-6" fill="#00B3BE" x="14" y="14" width="3" height="7"></rect>
+                    <rect id="Rectangle-11-Copy-7" fill="#00B3BE" x="20" y="10" width="3" height="11"></rect>
+                    <rect id="Rectangle-11-Copy-8" fill="#00B3BE" x="26" y="8" width="3" height="13"></rect>
+                    <rect id="Rectangle-11-Copy-9" fill="#00B3BE" x="32" y="10" width="3" height="11"></rect>
+                    <rect id="Rectangle-11-Copy-10" fill="#00B3BE" x="38" y="6" width="3" height="15"></rect>
+                    <path d="M0.5,20.5 L42.5,20.5" id="Line-8" stroke="#00B3BE" stroke-linecap="square"></path>
+                </g>
+                <rect id="Rectangle-12" fill="#FAFAFA" x="0" y="21" width="43" height="6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
