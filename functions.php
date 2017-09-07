@@ -17,7 +17,7 @@ function google_fonts() {
 		'family' => 'Roboto:300,400,700|Old+Standard+TT:400,700|Oswald:400,500,700',
 		'subset' => 'latin,latin-ext',
 	);
-	wp_register_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
+	wp_enqueue_style ( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
             }
 
 
