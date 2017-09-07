@@ -89,7 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
           	  	<a href="../altlabnew/resources/">Resources</a>
           	 </div>
 	          <div class="col-sm-12 home-details">
-	          	Find links to more of our online resources and general support help when you need it.
+	          	Find our online resources and general support help when you need it.
 	          </div>
 	          <div class="col-sm-12 home-resources-content">
 							<div class="home-resources-content border-time-center" id="online-logo">
@@ -182,7 +182,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-12 home-content-below">Free up your time</div>
+							<div class="col-sm-12 home-content-below home-content-below-title">Free up your time</div>
 						</div>
 						<div class="line"></div>
 								<div class="row">
@@ -197,7 +197,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-12 home-content-below">Help students learn</div>
+							<div class="col-sm-12 home-content-below home-content-below-title">Help students learn</div>
 						</div>
 						<div class="line"></div>
 								<div class="row">
@@ -212,7 +212,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-12 home-content-below">Inspire innovation</div>
+							<div class="col-sm-12 home-content-below home-content-below-title">Inspire innovation</div>
 						</div>
 						<div class="line"></div>
 									<div class="row">

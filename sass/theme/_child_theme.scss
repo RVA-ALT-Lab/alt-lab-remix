@@ -96,7 +96,6 @@ PROJECT PAGE
 }
 
 
-
 .alt-proj-faculty a:hover{
   text-decoration: none;
 }
@@ -406,7 +405,12 @@ HOME PAGE
 
 .home-content-below {
   background-color: rgba(255, 186, 0, 0.8);
-  padding: 15;
+  color: #000;
+  font-weight: 200;
+}
+
+.home-content-below-title {
+  padding: 0 0 8px 12px;
 }
 
 .home-container-below {
@@ -451,10 +455,10 @@ HOME PAGE
 }
 
 .question {
-  color:#fff;
+  color: #000;
   font-family: Roboto;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2.7em;
   text-align: left;
 }
@@ -503,6 +507,7 @@ NAVIGATION
   font-family: Oswald;
   font-weight: 400;
   font-size: 1.5em;
+  text-align: center;
   text-transform: uppercase;
   color: rgba(99,101,106,0.8);
   border-bottom: 1px dashed #9B9B9B;
