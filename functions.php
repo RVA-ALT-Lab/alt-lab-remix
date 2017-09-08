@@ -454,3 +454,10 @@ function getFacultyDept ($id){
       echo $dept[0]->name;
   }
 }
+
+function getFacultyTitle ($id){
+	if (get_field('title', $id)){
+	  $title = get_field('title', $id);
+      echo $title;
+  }
+}
