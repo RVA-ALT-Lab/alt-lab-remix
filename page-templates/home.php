@@ -89,7 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
           	  	<a href="../altlabnew/resources/">Resources</a>
           	 </div>
 	          <div class="col-sm-12 home-details">
-	          	Find our online resources and general support help when you need it.
+	          	Find our other online resources and get support when and where you need it.
 	          </div>
 	          <div class="col-sm-12 home-resources-content">
 							<div class="home-resources-content border-time-center" id="online-logo">
@@ -99,13 +99,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
-								<a href="https://rampages.us">RAMPAGES</a>
+								<a href="https://rampages.us">Course Design</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
-								<a href="https://rampages.us">Video Tutorials</a>
+								<a href="https://rampages.us">RAM PAGES</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
-								<a href="https://rampages.us">One FAQ</a>
+								<a href="https://rampages.us">FAQs</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
 	          	  	<a class="swap" href="https://rampages.us">Stats!
