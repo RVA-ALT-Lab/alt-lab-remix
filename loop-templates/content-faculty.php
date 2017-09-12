@@ -12,7 +12,7 @@
 
 
     <?php the_title( '<h1 class="faculty-title">', '</h1>' ); ?>   		
-    <div class="faculty-department"><?php getFacultyDept($id); ?></div>
+    <div class="faculty-department"><?php getFacultyDept($id); ?> - <?php getFacultyTitle($id); ?></div>
 	</header><!-- .entry-header -->
   <div class="row">
     <div class="faculty-bio col-md-4">
