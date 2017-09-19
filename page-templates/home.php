@@ -167,7 +167,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/wrench.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/wrench.png" class="wrench">
 				<div id="help"></div>
 	      	<div class="question-answered">
-						We can help you:
+						<span class="highlight">
+							We can help you:
+						</span>
 					</div>
 			</div>
 	</div>
