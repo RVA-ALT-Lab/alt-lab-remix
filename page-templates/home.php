@@ -180,7 +180,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
 						<div class="row">
 							<div class="col-sm-12 home-content-below">
-								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock.png"></div>
+								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock-black.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock-black.png"></div>
 							</div>
 						</div>
 						<div class="row">
@@ -195,7 +195,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
 						<div class="row">
 							<div class="col-sm-12 home-content-below">
-								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb.png"></div>
+								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb-black.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb-black.png"></div>
 							</div>
 						</div>
 						<div class="row">
@@ -210,7 +210,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
 						<div class="row">
 							<div class="col-sm-12 home-content-below">
-								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles.png"></div>
+								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles-black.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles-black.png"></div>
 							</div>
 						</div>
 						<div class="row">
@@ -224,10 +224,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 					</div>
 	  	</div>
-	</div>
-</div>
+	</div><!-- Wrapper end -->
 
+<div><!-- Wrapper begin again -->
+	<div class="home-wrapper-below home-content">
+		<div class="container home-content-below col-sm-10 col-sm-offset-2">
+			<div class="faq-below-nav">
+				<a href="#top">
+					<i class="fa fa-arrow-circle-down fa-3x">
+					</i>
+				</a>
+			</div>
+		</div>
+	</div>
 </div><!-- Wrapper end -->
+
+
 
 
 

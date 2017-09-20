@@ -404,7 +404,7 @@ HOME PAGE
 }
 
 .home-content-below {
-  background-color: rgba(255, 186, 0, 0.8);
+  //background-color: rgba(255, 186, 0, 0.8);
   color: #000;
   font-weight: 200;
 }
@@ -729,7 +729,7 @@ TOP CONTENT UNDER NAVIGATION
   letter-spacing: 0px;
   font-weight: 400;
   font-size: 3.4em;
-  text-align: center;
+  text-align: left;
   padding: 100px 0 50px 0;
   line-height: 0.8;
 }
@@ -742,7 +742,7 @@ TOP CONTENT UNDER NAVIGATION
 .line {
     height: 1px;
     width: 100%;
-    background-color: #fff;
+    background-color: #fec850;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -770,6 +770,10 @@ TOP CONTENT UNDER NAVIGATION
   padding: 20px;
 }
 
+.faq-below-nav {
+  text-align: center;
+  text-decoration: none;
+}
 
 .white {
   background-color: #fafafa;
