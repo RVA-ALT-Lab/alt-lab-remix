@@ -9871,7 +9871,15 @@ TOP CONTENT UNDER NAVIGATION
 
 .faq-below-nav {
   text-align: center;
-  text-decoration: none; }
+  padding-top: 20px; }
+
+.back-to-top-button {
+  font-family: Roboto;
+  font-size: 0.4em;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: .5px;
+  line-height: 1.5; }
 
 .white {
   background-color: #fafafa; }

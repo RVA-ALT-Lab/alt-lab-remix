@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    <div class="row home-page">
 	      <div class="col-md-6 wavy">
 	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/callout-balloon.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/callout-ballon.png" class="comment-bubble"</>
-	        <div class="alt-lab-stacked">ALT LAB</div>
+	        <div class="alt-lab-stacked "id="top">ALT LAB</div>
 	        <div class="alt-lab-spelled-out">Academic Learning Transformation Lab</div>
 	      </div>
 	      <div class="col-md-6">
@@ -229,9 +229,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div><!-- Wrapper begin again -->
 	<div class="home-wrapper-below home-content">
 		<div class="container home-content-below col-sm-10 col-sm-offset-2">
-			<div class="faq-below-nav">
+			<div class="faq-below-nav learn-more">
 				<a href="#top">
-					<i class="fa fa-arrow-circle-down fa-3x">
+					<i class="fa fa-arrow-circle-up fa-3x">
+						<p class="back-to-top-button">Back to top</p>
 					</i>
 				</a>
 			</div>
