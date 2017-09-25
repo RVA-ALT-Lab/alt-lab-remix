@@ -9574,7 +9574,7 @@ HOME PAGE
   font-weight: 200; }
 
 .home-content-below-title {
-  padding: 0 0 8px 12px; }
+  padding: 0 0 4px 20px; }
 
 .home-container-below {
   margin: 0 auto; }
@@ -9700,6 +9700,11 @@ NAVIGATION
 
 .type-tribe_events .tribe-mini-calendar-event .list-date {
   padding: 2px; }
+
+.tribe-events-sub-nav li {
+  background-color: #ffba00;
+  padding: 8px;
+  border-radius: 4px; }
 
 /*********************************
 TOP CONTENT UNDER NAVIGATION
@@ -9863,11 +9868,15 @@ TOP CONTENT UNDER NAVIGATION
   color: #000;
   letter-spacing: .5px;
   line-height: 1.5;
-  padding: 0 30px 50px 15px; }
+  padding: 0 20px 50px 20px; }
 
 .image-below {
   text-align: center;
   padding: 20px; }
+
+.content-row {
+  padding: 20px;
+  display: flex; }
 
 .faq-below-nav {
   text-align: center;
@@ -9875,7 +9884,7 @@ TOP CONTENT UNDER NAVIGATION
 
 .back-to-top-button {
   font-family: Roboto;
-  font-size: 0.4em;
+  font-size: 0.3em;
   font-weight: 400;
   color: #000;
   letter-spacing: .5px;
