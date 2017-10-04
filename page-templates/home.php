@@ -21,8 +21,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	        <div class="alt-lab-spelled-out">Academic Learning Transformation Lab</div>
 	      </div>
 	      <div class="col-md-6">
-	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/gear.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/gear.png'" class="gear" aria-hidden="true">
-	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.png'" class="hand" aria-hidden="true">
+	        <div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/gear.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/gear.png'" class="gear" aria-hidden="true"></div>
+	        <div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.png'" class="hand" aria-hidden="true"></div>
 	        <?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content();?>
 	        <?php endwhile; // end of the loop. ?>
