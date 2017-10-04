@@ -16,13 +16,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	  <div class="top-logo-area">
 	    <div class="row home-page">
 	      <div class="col-md-6 wavy">
-	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/callout-balloon.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/callout-ballon.png" class="comment-bubble"</>
+	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/callout-balloon.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/callout-ballon.png'" class="comment-bubble"</>
 	        <div class="alt-lab-stacked "id="top">ALT LAB</div>
 	        <div class="alt-lab-spelled-out">Academic Learning Transformation Lab</div>
 	      </div>
 	      <div class="col-md-6">
-	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/gear.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/gear.png" class="gear">
-	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.png" class="hand">
+	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/gear.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/gear.png'" class="gear">
+	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.png'" class="hand">
 	        <?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content();?>
 	        <?php endwhile; // end of the loop. ?>
@@ -94,8 +94,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	          <div class="col-sm-12 home-resources-content">
 							<div class="home-resources-content border-time-center" id="online-logo">
 	          	  <a class="swap" href="https://online.vcu.edu">
-									<img class="img-responsive home-resources-img" src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-black.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-black.png">
-									<img class="img-responsive home-resources-img" src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-color.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-color.png">
+									<img class="img-responsive home-resources-img" src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-black.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-black.png'">
+									<img class="img-responsive home-resources-img" src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-color.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-color.png'">
 								</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
@@ -109,8 +109,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
 	          	  	<a class="swap" href="https://rampages.us">Stats!
-										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.png">
-										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.png">
+										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.png'">
+										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.png'">
 									</a>
 								<div class="home-tiny-details">See data about our data!</div>
 							</div>
@@ -164,7 +164,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="home-wrapper-below">
 	<div class="container">
 			<div class="col-md-6 wavy">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/wrench.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/wrench.png" class="wrench">
+				<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/wrench.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/wrench.png'" class="wrench">
 				<div id="help"></div>
 	      	<div class="question-answered">
 						<span class="highlight">
@@ -180,7 +180,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
 						<div class="row">
 							<div class="col-sm-12 home-content-below">
-								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock-black.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock-black.png"></div>
+								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock-black.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock-black.png'"></div>
 							</div>
 						</div>
 						<div class="row">
@@ -195,7 +195,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
 						<div class="row">
 							<div class="col-sm-12 home-content-below">
-								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb-black.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb-black.png"></div>
+								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb-black.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb-black.png'"></div>
 							</div>
 						</div>
 						<div class="row">
@@ -210,7 +210,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
 						<div class="row">
 							<div class="col-sm-12 home-content-below">
-								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles-black.svg" onerror="this.onerror=null; this.src="<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles-black.png"></div>
+								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles-black.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles-black.png'"></div>
 							</div>
 						</div>
 						<div class="row">
