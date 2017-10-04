@@ -60,7 +60,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 					  // Do Stuff
 				    echo '<div class="border-time-center project-sites"><a href="'. get_permalink() .'">';
-						the_post_thumbnail('medium', ['class' => 'img-responsive home-project-img', 'title' => 'Feature image']);
+						the_post_thumbnail('medium', ['class' => 'img-responsive home-project-img', 'title' => 'Feature image', 'alt'	=> trim(strip_tags( $post->post_title ))]);
 					echo '</a></div>';
 				endwhile;
 				endif;
@@ -94,8 +94,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	          <div class="col-sm-12 home-resources-content">
 							<div class="home-resources-content border-time-center" id="online-logo">
 	          	  <a class="swap" href="https://online.vcu.edu">
-									<img class="img-responsive home-resources-img" src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-black.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-black.png'">
-									<img class="img-responsive home-resources-img" src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-color.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-color.png'">
+									<img class="img-responsive home-resources-img" src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-black.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-black.png'" alt="online at VCU logo">
+									<img class="img-responsive home-resources-img" src="<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-color.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/online-vcu-color.png'" alt="online at VCU logo">
 								</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
@@ -109,8 +109,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
 	          	  	<a class="swap" href="https://rampages.us">Stats!
-										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.png'">
-										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.png'">
+										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.png'" alt="graph icon">
+										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.png'" alt="graph icon">
 									</a>
 								<div class="home-tiny-details">See data about our data!</div>
 							</div>
@@ -126,7 +126,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	          	Get to know us a little bit and then let’s make something together.
 	          </div>
 	          <div class="col-sm-12 home-about-content">
-	          	<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/building01.png" class="img-responsive"></div>
+	          	<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/building01.png" class="img-responsive" alt="Academic Learning Commons building"></div>
 	          </div>
 	          <div class="col-sm-12 home-details-content home-us-image">
 							<?php
@@ -143,7 +143,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 					  // Do Stuff
 				    echo '<div class="col-md-4 col-sm-4 col-xs-4 home-us-image"><a href="'. get_permalink() .'">';
-						the_post_thumbnail('thumbnail', ['class' => 'img-responsive home-faculty-img', 'title' => 'Feature image']);
+						the_post_thumbnail('thumbnail', ['class' => 'img-responsive home-faculty-img', 'title' => 'Feature image', 'alt'	=> trim(strip_tags( $post->post_title ))]);
 					echo '</a></div>';
 				endwhile;
 				echo '</div>';
@@ -164,7 +164,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="home-wrapper-below">
 	<div class="container">
 			<div class="col-md-6 wavy">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/wrench.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/wrench.png'" class="wrench">
+				<div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/wrench.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/wrench.png'" class="wrench"></div>
 				<div id="help"></div>
 	      	<div class="question-answered">
 						<span class="highlight">
