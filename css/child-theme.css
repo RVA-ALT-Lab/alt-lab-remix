@@ -9623,7 +9623,10 @@ HOME PAGE
 .comment-bubble {
   position: absolute;
   top: 100px;
-  left: 290px; }
+  left: 290px;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat; }
 
 .hand {
   position: absolute;

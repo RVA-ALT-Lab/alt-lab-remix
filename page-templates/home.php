@@ -16,13 +16,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	  <div class="top-logo-area">
 	    <div class="row home-page">
 	      <div class="col-md-6 wavy">
-	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/callout-balloon.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/callout-ballon.png'" class="comment-bubble"</>
+	        <div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/callout-balloon.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/callout-ballon.png'" class="comment-bubble" aria-hidden="true"></div>
 	        <div class="alt-lab-stacked "id="top">ALT LAB</div>
 	        <div class="alt-lab-spelled-out">Academic Learning Transformation Lab</div>
 	      </div>
 	      <div class="col-md-6">
-	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/gear.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/gear.png'" class="gear">
-	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.png'" class="hand">
+	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/gear.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/gear.png'" class="gear" aria-hidden="true">
+	        <img src="<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.png'" class="hand" aria-hidden="true">
 	        <?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content();?>
 	        <?php endwhile; // end of the loop. ?>
