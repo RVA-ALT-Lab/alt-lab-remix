@@ -99,13 +99,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
-								<a href="https://rampages.us">Course Design</a>
+								<a href="../altlabnew/course-design/">Course Design</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
 								<a href="https://rampages.us">RAM PAGES</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
-								<a href="https://rampages.us">FAQs</a>
+								<a href="../altlabnew/faqs/">FAQs</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
 	          	  	<a class="swap" href="https://rampages.us">Stats!
@@ -203,7 +203,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="line"></div>
 								<div class="row">
-									<div class="col-sm-12 home-content-below what-we-can-do-text"><p>The term "active learning" has been ballyhooed for some time now in higher education. It is often used as an umbrella term for a vast range of activities and techniques that endeavor to get students to do more in the classroom than just take notes, and to do more outside of the classroom than just memorize their notes.</p><p>This workshop is designed to provide participants with a research-based rationale for why active learning works, an introduction to a wide range of techniques that are suitable to various contexts, and a better understanding of how to select active learning techniques based on one's learning outcomes.</p>
+								<div class="col-sm-12 home-content-below what-we-can-do-text article-main-body"><p>The term <a href="https://www.wikipedia.org">"active learning"</a> has been ballyhooed for some time now in higher education. It is often used as an umbrella term for a vast range of activities and techniques that endeavor to get students to do more in the classroom than just take notes, and to do more outside of the classroom than just memorize their notes.</p><p>This workshop is designed to provide participants with a research-based rationale for why active learning works, an introduction to a wide range of techniques that are suitable to various contexts, and a better understanding of how to select active learning techniques based on one's learning outcomes.</p>
 									</div>
 								</div>
 					</div>

@@ -9233,7 +9233,7 @@ h1.navbar-brand a:hover {
   display: block; }
 
 body {
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-image: none;
   background-color: #fafafa; }
 
@@ -9882,6 +9882,27 @@ TOP CONTENT UNDER NAVIGATION
   line-height: 1.5;
   padding: 0 20px 50px 20px; }
 
+.article-main-body p a {
+  color: #0074d2;
+  font-weight: 400; }
+
+.article-main-body p a:hover {
+  background-position: 0% 100%; }
+
+.article-main-body p a {
+  background-image: -webkit-linear-gradient(-180deg, transparent 0%, rgba(0, 116, 210, 0) 88%, rgba(0, 55, 255, 0.3) 88%);
+  background-image: -moz-linear-gradient(-180deg, transparent 0%, rgba(0, 116, 210, 0) 88%, rgba(0, 55, 255, 0.3) 88%);
+  background-image: -o-linear-gradient(-180deg, transparent 0%, rgba(0, 116, 210, 0) 88%, rgba(0, 55, 255, 0.3) 88%);
+  background-image: linear-gradient(-180deg, transparent 0%, rgba(0, 116, 210, 0) 88%, rgba(0, 55, 255, 0.3) 88%);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-position: 0% 0%;
+  background-size: auto 150%;
+  padding-bottom: 4px;
+  position: relative; }
+
 .image-below {
   text-align: center;
   padding: 20px; }
@@ -9904,6 +9925,27 @@ TOP CONTENT UNDER NAVIGATION
 
 .white {
   background-color: #fafafa; }
+
+/*********************************
+FAQ PAGE
+*********************************/
+/*
+.collapse-accordion .card a[data-toggle=collapse] {
+  display: block;
+  padding: .75rem 1.25rem;
+}
+
+.collapse-accordion .card-header {
+  padding: 0;
+}
+*/
+.accordion .card-header:after {
+  font-family: 'FontAwesome';
+  content: "\f068";
+  float: right; }
+
+.accordion .card-header.collapsed:after {
+  content: "\f067"; }
 
 @media only screen and (max-device-width: 800px) {
   .faculty-project-item {
