@@ -9630,7 +9630,7 @@ HOME PAGE
 
 .hand {
   position: absolute;
-  bottom: -10px;
+  bottom: -20px;
   left: 200px;
   width: 100px;
   height: 100px;
@@ -9648,7 +9648,7 @@ HOME PAGE
   position: absolute;
   top: -20px;
   left: 400px;
-  width: 100px;
+  width: 115px;
   height: 100px;
   background-repeat: no-repeat; }
 

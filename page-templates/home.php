@@ -184,7 +184,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-12 home-content-below home-content-below-title">Free up your time</div>
+							<div class="col-sm-12 home-content-below home-content-below-title">Free your time</div>
 						</div>
 						<div class="line"></div>
 								<div class="row">
