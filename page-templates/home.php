@@ -180,7 +180,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
 						<div class="row">
 							<div class="col-sm-12 home-content-below">
-								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock-black.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock-black.png'"></div>
+								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock-black.svg" alt="clock" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/timeclock-black.png'" alt="clock"></div>
 							</div>
 						</div>
 						<div class="row">
@@ -195,7 +195,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
 						<div class="row">
 							<div class="col-sm-12 home-content-below">
-								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb-black.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb-black.png'"></div>
+								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb-black.svg" alt="lightbulb" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/lightbulb-black.png'"></div>
 							</div>
 						</div>
 						<div class="row">
@@ -210,7 +210,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="col-sm-4 home-content-below what-we-can-do-title">
 						<div class="row">
 							<div class="col-sm-12 home-content-below">
-								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles-black.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles-black.png'"></div>
+								<div class="image-below"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles-black.svg" alt="sparkles" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/sparkles-black.png'"></div>
 							</div>
 						</div>
 						<div class="row">
