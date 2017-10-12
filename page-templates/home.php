@@ -17,16 +17,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    <div class="row home-page">
 	      <div class="col-md-6 wavy">
 	        <div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/callout-balloon.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/callout-ballon.png'" class="comment-bubble" aria-hidden="true"></div>
-	        <div class="alt-lab-stacked "id="top">ALT LAB</div>
+	        <div class="alt-lab-stacked" id="top">ALT LAB</div>
 	        <div class="alt-lab-spelled-out">Academic Learning Transformation Lab</div>
 	      </div>
-	      <div class="col-md-6">
+	      <div class="col-md-6" id="content">
 	        <div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/gear.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/gear.png'" class="gear" aria-hidden="true"></div>
 	        <div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.png'" class="hand" aria-hidden="true"></div>
 	        <?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content();?>
 	        <?php endwhile; // end of the loop. ?>
-					<div class="learn-more"><a href="#help">Learn more</a></div>
+					<div class="learn-more"><a href="#help">Learn more about ALT Lab</a></div>
 	      </div>
 	    </div>
 	  </div>
