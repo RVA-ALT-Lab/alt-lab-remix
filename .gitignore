@@ -6,3 +6,4 @@ understrap.zip
 dist
 dist-product
 .DS_Store
+composer.phar
