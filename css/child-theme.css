@@ -9249,8 +9249,8 @@ h1.navbar-brand a, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:
   text-transform: uppercase; }
 
 #navbarNavDropdown {
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end; }
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start; }
 
 .wrapper {
   background-image: url(../imgs/ALTlab-Atriangle.png); }
