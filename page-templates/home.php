@@ -26,7 +26,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	        <?php while ( have_posts() ) : the_post(); ?>
 				<?php the_content();?>
 	        <?php endwhile; // end of the loop. ?>
-					<div class="learn-more"><a href="#help">Learn more about ALT Lab</a></div>
 	      </div>
 	    </div>
 	  </div>
