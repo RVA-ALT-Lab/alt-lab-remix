@@ -421,9 +421,24 @@ HOME PAGE
   font-weight: 700;
   font-size: 12em;
   line-height: .9;
-  letter-spacing: .2px;
+  letter-spacing: 1px;
   text-align: center;
   padding-top: 40px
+}
+
+.alt-lab-upsidedown {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 12em;
+  line-height: 1.1;
+  letter-spacing: -5px;
+  text-align: center;
+  -webkit-transform:rotate(-180deg);
+  -moz-transform:rotate(-180deg);
+  -o-transform:rotate(-180deg);
+  transform:rotate(-180deg);
+  ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .wavy {
@@ -434,7 +449,7 @@ HOME PAGE
 .alt-lab-spelled-out {
   font-family: Roboto;
   font-weight: 300;
-  padding-top: 20px;
+  //padding-top: 20px;
   padding-bottom: 60px;
   letter-spacing: 3px;
   text-align: center;
