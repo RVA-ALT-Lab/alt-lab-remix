@@ -420,10 +420,10 @@ HOME PAGE
   font-family: Oswald;
   font-weight: 700;
   font-size: 12em;
-  line-height: .9;
+  line-height: .7;
   letter-spacing: 1px;
   text-align: center;
-  padding-top: 40px
+  padding-top: 75px;
 }
 
 .alt-lab-upsidedown {
@@ -433,12 +433,12 @@ HOME PAGE
   line-height: 1.1;
   letter-spacing: -5px;
   text-align: center;
-  -webkit-transform:rotate(-180deg);
-  -moz-transform:rotate(-180deg);
-  -o-transform:rotate(-180deg);
-  transform:rotate(-180deg);
-  ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  //-webkit-transform:rotate(-180deg);
+  //-moz-transform:rotate(-180deg);
+  //-o-transform:rotate(-180deg);
+  //transform:rotate(-180deg);
+  //ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  //filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 .wavy {
@@ -464,8 +464,7 @@ HOME PAGE
   color: #000;
   text-align: left;
   letter-spacing: 0.8px;
-  line-height: 1.2em;
-
+  line-height: 1.5em;
 }
 
 .question {
@@ -712,10 +711,10 @@ TOP CONTENT UNDER NAVIGATION
   padding: 0;
 }
 
-.home-faculty-img {
-  border-radius: 50%;
-  padding: 5px;
-}
+//.home-faculty-img {
+  //border-radius: 50%;
+  //padding: 1px;
+//}
 
 .home-tiny-details {
   font-size: .4em;
@@ -769,6 +768,7 @@ TOP CONTENT UNDER NAVIGATION
 .highlight {
   background: #fafafa;
   box-shadow: 8px 0 0 #fafafa, -8px 0 0 #fafafa;
+  box-decoration-break: clone;
 }
 
 .line {
@@ -873,15 +873,14 @@ FAQ PAGE
   content: "\f067";
 }
 
-
-@media only screen and (max-device-width : 800px) {
+@media only screen and (max-width : 800px) {
 .faculty-project-item {
     width: 50%;
   }
 }
 
 
-@media only screen and (max-device-width : 580px) {
+@media only screen and (max-width : 580px) {
   .container-fluid {
     width: 100%;
     margin: 10px auto;
@@ -894,6 +893,10 @@ FAQ PAGE
 
   .faculty-project-item {
     width: 100%;
+  }
+
+  .we-create {
+    padding-top: 0;
   }
 
 }

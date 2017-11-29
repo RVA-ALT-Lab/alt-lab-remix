@@ -126,7 +126,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	          	Get to know us a little bit and then let’s make something together.
 	          </div>
 	          <div class="col-sm-12 home-about-content">
-	          	<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/building01.png" class="img-responsive" alt="Academic Learning Commons building"></div>
+						<a href="../altlabnew/about-us/"><img src="<?php echo get_stylesheet_directory_uri();?>/imgs/building01.png" class="img-responsive" alt="Academic Learning Commons building"></div></a>
 	          </div>
 	          <div class="col-sm-12 home-details-content home-us-image">
 							<?php
@@ -239,7 +239,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div>
 </div><!-- Wrapper end -->
-
 
 
 

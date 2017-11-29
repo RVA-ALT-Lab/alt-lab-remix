@@ -84,7 +84,7 @@ jQuery(document).ready(function() {
     jQuery('html, body').animate({
         scrollTop: jQuery( jQuery(this).attr('href') ).offset().top
     }, 1500);
-    return false;
+    return true;
   });
 });
 
