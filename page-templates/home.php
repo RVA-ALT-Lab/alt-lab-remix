@@ -17,8 +17,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	    <div class="row home-page">
 	      <div class="col-md-6 wavy">
 	        <div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/callout-balloon.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/callout-ballon.png'" class="comment-bubble" aria-hidden="true"></div>
-					<div class="alt-lab-stacked" id="top">ALT</div>
-					<div class="alt-lab-upsidedown">LAB</div>
+					<h1 class="alt-lab-stacked" id="top">ALT</h1>
+					<h1 class="alt-lab-upsidedown">LAB</h1>
 	        <div class="alt-lab-spelled-out">Academic Learning Transformation Lab</div>
 	      </div>
 	      <div class="col-md-6" id="content">
