@@ -1,0 +1,5 @@
+{
+    "require": {
+        "adam-paterson/oauth2-slack": "^1.1"
+    }
+}
