@@ -798,7 +798,21 @@ TOP CONTENT UNDER NAVIGATION
 }
 
 .article-main-body p a {
-  color: #0074d2;
+  font-weight: 600;
+}
+
+.article-main-body p a:hover {
+  font-weight: 400;
+  border-bottom: 1px solid #fec850;
+  padding: 0 0 2px 0;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+
+/*
+.article-main-body p a {
+  //color: #0074d2;
   font-weight: 400;
 }
 
@@ -820,7 +834,7 @@ TOP CONTENT UNDER NAVIGATION
   padding-bottom: 4px;
   position: relative;
 }
-
+*/
 .image-below {
   text-align: center;
   padding: 20px;

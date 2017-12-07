@@ -188,7 +188,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="line"></div>
 								<div class="row">
-									<div class="col-sm-12 home-content-below what-we-can-do-text"><p>The Internet is a big place. We'll explore fertile grounds for multimedia content, advanced search patterns to find better content faster, and ways to save and organize all the great things you've found.</p><p>Learn techniques that will make your searching more effiecent.</p>
+									<div class="col-sm-12 home-content-below what-we-can-do-text article-main-body"><p>The Internet is a big place. We'll explore fertile grounds for multimedia content, advanced search patterns to find better content faster, and ways to save and organize all the great things you've found.</p><p>Learn techniques that will make your searching more effiecent.</p>
 									</div>
 								</div>
 					</div>
@@ -218,7 +218,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="line"></div>
 									<div class="row">
-										<div class="col-sm-12 home-content-below what-we-can-do-text"><p>Learn how a Rampages.us site can enrich your course, whether it's an online one or a hybrid. Expand beyond the tools you may already know about and try some new innovative experiential techniques to engage with your students.</p><p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+										<div class="col-sm-12 home-content-below what-we-can-do-text article-main-body"><p>Learn how a Rampages.us site can enrich your course, whether it's an online one or a hybrid. Expand beyond the tools you may already know about and try some new innovative experiential techniques to engage with your students.</p><p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of <a href="https://en.wikipedia.org/wiki/Letraset">Letraset</a> sheets containing Lorem Ipsum passages</p>
 										</div>
 									</div>
 						</div>
