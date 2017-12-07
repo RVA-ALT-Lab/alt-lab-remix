@@ -80,7 +80,7 @@ function daysAlive (inception){
 //Matt's scroll link thingy
 jQuery(document).ready(function() {
   jQuery('.question a').click(function(event){
-		event.preventDefault();
+    event.preventDefault();
     jQuery('html, body').animate({
         scrollTop: jQuery( jQuery(this).attr('href') ).offset().top
     }, 1500);
