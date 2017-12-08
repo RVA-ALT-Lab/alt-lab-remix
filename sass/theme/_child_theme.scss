@@ -431,11 +431,11 @@ HOME PAGE
   font-weight: 700;
   font-size: 12em;
   line-height: 1;
-  letter-spacing: -5px;
+  letter-spacing: -7px;
   text-align: center;
-  //-webkit-mask-image: url('../imgs/grunge-copy.png');
-  //-webkit-mask-size: 500px 400px;
-  //mix-blend-mode: multiply;
+  // -webkit-mask-image: url('../imgs/half-tone.png');
+  // -webkit-mask-size: 450px 250px;
+  // mix-blend-mode: multiply;
   //-webkit-transform:rotate(-180deg);
   //-moz-transform:rotate(-180deg);
   //-o-transform:rotate(-180deg);
@@ -889,6 +889,15 @@ FAQ PAGE
 .accordion .card-header.collapsed:after {
   content: "\f067";
 }
+
+.su-spoiler-icon {
+  line-height: 64px !important;
+}
+
+.su-spoiler-title {
+  padding: 30px 30px 30px 35px !important;
+}
+
 
 @media only screen and (max-width : 800px) {
 .faculty-project-item {

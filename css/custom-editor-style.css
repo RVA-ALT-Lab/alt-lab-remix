@@ -9593,7 +9593,7 @@ HOME PAGE
   font-weight: 700;
   font-size: 12em;
   line-height: 1;
-  letter-spacing: -5px;
+  letter-spacing: -7px;
   text-align: center; }
 
 .wavy {
@@ -9965,6 +9965,12 @@ FAQ PAGE
 
 .accordion .card-header.collapsed:after {
   content: "\f067"; }
+
+.su-spoiler-icon {
+  line-height: 64px !important; }
+
+.su-spoiler-title {
+  padding: 30px 30px 30px 35px !important; }
 
 @media only screen and (max-width: 800px) {
   .faculty-project-item {

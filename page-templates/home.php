@@ -108,7 +108,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<a href="../altlabnew/faqs/">FAQs</a>
 							</div>
 							<div class="home-resources-content border-time-center home-resources-img">
-	          	  	<a class="swap" href="https://rampages.us">Stats!
+	          	  	<a class="swap" href="../altlabnew/stats/">Stats!
 										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph.png'" alt="graph icon">
 										<img src="<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.svg" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/stats-graph-aqua.png'" alt="graph icon">
 									</a>
