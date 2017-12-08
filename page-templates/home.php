@@ -134,9 +134,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 	          		'post_type' => 'faculty',
 	          		'posts_per_page' => 10,
 	          		'orderby' => 'rand',
-	          		'meta_key' => '_thumbnail_id',
-	          		);
-	          	$the_query = new WP_Query( $args );
+								'meta_key' => '_thumbnail_id',
+								'tax_query' => array(
+									// 'relation' => 'OR',
+										array(
+											'taxonomy' => 'departments',
+											'field' => 'slug',
+											'terms' => 'alt-lab',
+											'include_children' => true,
+											'operator' => 'IN'
+										)
+									)
+								);
+							$the_query = new WP_Query( $args );
+							
 				// The Loop
 				if ( $the_query->have_posts() ) :
 					echo '<div class="row">';

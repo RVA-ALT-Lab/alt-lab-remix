@@ -430,9 +430,12 @@ HOME PAGE
   font-family: Oswald;
   font-weight: 700;
   font-size: 12em;
-  line-height: 1.1;
+  line-height: 1;
   letter-spacing: -5px;
   text-align: center;
+  //-webkit-mask-image: url('../imgs/grunge-copy.png');
+  //-webkit-mask-size: 500px 400px;
+  //mix-blend-mode: multiply;
   //-webkit-transform:rotate(-180deg);
   //-moz-transform:rotate(-180deg);
   //-o-transform:rotate(-180deg);
