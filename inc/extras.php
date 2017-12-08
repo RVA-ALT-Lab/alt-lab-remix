@@ -89,6 +89,7 @@ if ( ! function_exists( 'understrap_post_nav' ) ) :
 			return;
 		}
 		?>
+		<div class="row nav-row">
 				<nav class="navigation post-navigation row">
 					<h2 class="sr-only"><?php _e( 'Post navigation', 'understrap' ); ?></h2>
 					<div class="row nav-links justify-content-between col-md-12">
@@ -103,7 +104,7 @@ if ( ! function_exists( 'understrap_post_nav' ) ) :
 						?>
 					</div><!-- .nav-links -->
 				</nav><!-- .navigation -->
-
+		</div>
 		<?php
 	}
 endif;
