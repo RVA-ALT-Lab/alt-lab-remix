@@ -9413,12 +9413,11 @@ PROJECT PAGE
   color: #00B3BE; }
 
 .entry-footer {
-  padding: 20px;
-  margin: 0 -15px; }
+  padding: 20px; }
 
 .post-navigation {
   padding: 20px 50px;
-  margin: 0 -15px;
+  margin: 0;
   width: 100%; }
 
 #cone {

@@ -5,19 +5,23 @@ var basePaths = {
     dev: './src/'
 };
 
+
 // browser-sync watched files
 // automatically reloads the page when files changed
 var browserSyncWatchFiles = [
     './css/*.min.css',
     './js/*.min.js',
-    './*.php'
+    './**/*.php'
 ];
+
+
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "localhost/understrap/",
+    proxy: "localhost/wordpress/",
     notify: false
 };
+
 
 // Defining requirements
 var gulp = require('gulp');
@@ -29,6 +33,7 @@ var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var merge2 = require('merge2');
+var imagemin = require('gulp-imagemin');
 var ignore = require('gulp-ignore');
 var rimraf = require('gulp-rimraf');
 var clone = require('gulp-clone');
@@ -36,13 +41,21 @@ var merge = require('gulp-merge');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 var del = require('del');
+var cleanCSS = require('gulp-clean-css');
+var gulpSequence = require('gulp-sequence');
+
 
 // Run:
 // gulp sass + cssnano + rename
-// Prepare the min.css for production (with 2 pipes to be sure that "child-theme.css" == "child-theme.min.css")
+// Prepare the min.css for production (with 2 pipes to be sure that "theme.css" == "theme.min.css")
 gulp.task('scss-for-prod', function() {
     var source =  gulp.src('./sass/*.scss')
-        .pipe(plumber())
+        .pipe(plumber({
+            errorHandler: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(sass());
 
@@ -50,10 +63,10 @@ gulp.task('scss-for-prod', function() {
         .pipe(sourcemaps.write(undefined, { sourceRoot: null }))
         .pipe(gulp.dest('./css'))
         .pipe(rename('custom-editor-style.css'))
-        .pipe(gulp.dest('./css'));
+
 
     var pipe2 = source.pipe(clone())
-        .pipe(cssnano())
+        .pipe(minify-css())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./css'));
 
@@ -66,7 +79,12 @@ gulp.task('scss-for-prod', function() {
 // Prepare the child-theme.css for the development environment
 gulp.task('scss-for-dev', function() {
     gulp.src('./sass/*.scss')
-        .pipe(plumber())
+        .pipe(plumber({
+            errorHandler: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(sass())
         .pipe(sourcemaps.write(undefined, { sourceRoot: null }))
@@ -77,58 +95,101 @@ gulp.task('watch-scss', ['browser-sync'], function () {
     gulp.watch('./sass/**/*.scss', ['scss-for-dev']);
 });
 
+
 // Run:
 // gulp sass
 // Compiles SCSS files in CSS
 gulp.task('sass', function () {
     var stream = gulp.src('./sass/*.scss')
-        .pipe(plumber())
+        .pipe(plumber({
+            errorHandler: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
         .pipe(sass())
         .pipe(gulp.dest('./css'))
         .pipe(rename('custom-editor-style.css'))
-        .pipe(gulp.dest('./css'));
     return stream;
 });
 
-// Run: 
+
+// Run:
 // gulp watch
 // Starts watcher. Watcher runs gulp sass task on changes
 gulp.task('watch', function () {
-    gulp.watch('./sass/**/*.scss', ['sass']);
-    gulp.watch('./css/child-theme.css', ['cssnano']);
-    gulp.watch([basePaths.dev + 'js/**/*.js'], ['scripts'])
+    gulp.watch('./sass/**/*.scss', ['styles']);
+    gulp.watch([basePaths.dev + 'js/**/*.js','js/**/*.js','!js/theme.js','!js/theme.min.js'], ['scripts']);
+
+    //Inside the watch task.
+    gulp.watch('./img/**', ['imagemin'])
 });
 
-// Run: 
-// gulp nanocss
+// Run:
+// gulp imagemin
+// Running image optimizing task
+gulp.task('imagemin', function(){
+    gulp.src('img/src/**')
+    .pipe(imagemin())
+    .pipe(gulp.dest('img'))
+});
+
+
+// Run:
+// gulp cssnano
 // Minifies CSS files
-gulp.task('cssnano', ['cleancss'], function(){
-  return gulp.src('./css/*.css')
+gulp.task('cssnano', function(){
+  return gulp.src('./css/theme.css')
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(plumber())
+    .pipe(plumber({
+            errorHandler: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano({discardComments: {removeAll: true}}))
     .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('./css/'))
+});
+
+gulp.task('minify-css', function() {
+  return gulp.src('./css/theme.css')
+  .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(cleanCSS({compatibility: '*'}))
+    .pipe(plumber({
+            errorHandler: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
+    .pipe(rename({suffix: '.min'}))
+     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./css/'));
-}); 
+});
 
 gulp.task('cleancss', function() {
-  return gulp.src('./css/*.min.css', { read: false }) // much faster 
+  return gulp.src('./css/*.min.css', { read: false }) // much faster
     .pipe(ignore('theme.css'))
     .pipe(rimraf());
 });
 
-// Run: 
+gulp.task('styles', function(callback){ gulpSequence('sass', 'minify-css')(callback) });
+ 
+
+// Run:
 // gulp browser-sync
 // Starts browser-sync task for starting the server.
 gulp.task('browser-sync', function() {
     browserSync.init(browserSyncWatchFiles, browserSyncOptions);
 });
 
-// Run: 
+
+// Run:
 // gulp watch-bs
 // Starts watcher with browser-sync. Browser-sync reloads page automatically on your browser
-gulp.task('watch-bs', ['browser-sync', 'watch', 'cssnano'], function () { });
+gulp.task('watch-bs', ['browser-sync', 'watch', 'scripts'], function () { });
+
 
 // Run: 
 // gulp scripts. 
@@ -145,12 +206,12 @@ gulp.task('scripts', function() {
         basePaths.dev + 'js/skip-link-focus-fix.js'
     ];
   gulp.src(scripts)
-    .pipe(concat('child-theme.min.js'))
+    .pipe(concat('theme.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./js/'));
 
   gulp.src(scripts)
-    .pipe(concat('child-theme.js'))
+    .pipe(concat('theme.js'))
     .pipe(gulp.dest('./js/'));
 });
 
@@ -159,27 +220,24 @@ gulp.task('clean-source', function () {
   return del(['src/**/*',]);
 });
 
-// Run: 
-// gulp copy-assets. 
+// Run:
+// gulp copy-assets.
 // Copy all needed dependency assets files from bower_component assets to themes /js, /scss and /fonts folder. Run this task after bower install or bower update
 
-
-// Copy all Bootstrap JS files 
-gulp.task('copy-assets', function() {
+////////////////// All Bootstrap SASS  Assets /////////////////////////
+gulp.task('copy-assets', ['clean-source'], function() {
 
 ////////////////// All Bootstrap 4 Assets /////////////////////////
-// Copy all Bootstrap JS files 
-    gulp.src(basePaths.node + 'bootstrap/dist/js/**/*.js')
+// Copy all Bootstrap JS files
+    var stream = gulp.src(basePaths.node + 'bootstrap/dist/js/**/*.js')
        .pipe(gulp.dest(basePaths.dev + '/js/bootstrap4'));
+  
 
 // Copy all Bootstrap SCSS files
     gulp.src(basePaths.node + 'bootstrap/scss/**/*.scss')
        .pipe(gulp.dest(basePaths.dev + '/sass/bootstrap4'));
-////////////////// End Bootstrap 4 Assets /////////////////////////
 
-// Copy all UnderStrap SCSS files
-    gulp.src(basePaths.node + 'understrap/sass/**/*.scss')
-       .pipe(gulp.dest(basePaths.dev + '/sass/understrap'));
+////////////////// End Bootstrap 4 Assets /////////////////////////
 
 // Copy all Font Awesome Fonts
     gulp.src(basePaths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eof,svg}')
@@ -201,7 +259,6 @@ gulp.task('copy-assets', function() {
     gulp.src(basePaths.node + 'undescores-for-npm/js/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js'));
 
-
 // Copy Tether JS files
     gulp.src(basePaths.node + 'tether/dist/js/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js'));
@@ -209,13 +266,15 @@ gulp.task('copy-assets', function() {
 // Copy Tether CSS files
     gulp.src(basePaths.node + 'tether/dist/css/*.css')
         .pipe(gulp.dest(basePaths.dev + '/css'));
+    return stream;
 });
+
 
 // Run
 // gulp dist
-// Copies the files to the /dist folder for distributon
+// Copies the files to the /dist folder for distributon as simple theme
 gulp.task('dist', ['clean-dist'], function() {
-    gulp.src(['**/*','!bower_components','!bower_components/**','!node_modules','!node_modules/**','!src','!src/**','!dist','!dist/**','!sass','!sass/**','!readme.txt','!readme.md','!package.json','!gulpfile.js','!CHANGELOG.md','!.travis.yml','!jshintignore', '!codesniffer.ruleset.xml', '*'])
+    gulp.src(['**/*','!bower_components','!bower_components/**','!node_modules','!node_modules/**','!src','!src/**','!dist','!dist/**','!dist-product','!dist-product/**','!sass','!sass/**','!readme.txt','!readme.md','!package.json','!gulpfile.js','!CHANGELOG.md','!.travis.yml','!jshintignore', '!codesniffer.ruleset.xml', '*'])
     .pipe(gulp.dest('dist/'))
 });
 
@@ -226,9 +285,9 @@ gulp.task('clean-dist', function () {
 
 // Run
 // gulp dist-product
-// Copies the files to the /dist folder for distributon
+// Copies the files to the /dist-prod folder for distributon as theme with all assets
 gulp.task('dist-product', ['clean-dist-product'], function() {
-    gulp.src(['**/*','!bower_components','!bower_components/**','!node_modules','!node_modules/**','!src','!src/**','!dist','!dist/**', '*'])
+    gulp.src(['**/*','!bower_components','!bower_components/**','!node_modules','!node_modules/**','!dist','!dist/**','!dist-product','!dist-product/**', '*'])
     .pipe(gulp.dest('dist-product/'))
 });
 

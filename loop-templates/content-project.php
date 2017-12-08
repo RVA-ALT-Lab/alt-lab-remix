@@ -128,7 +128,7 @@
     <div class="col-md-7">
 		    <?php  if ( has_post_thumbnail()) {
             $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');
-            the_post_thumbnail('large');
+            the_post_thumbnail('large', ['class' => 'img img-fluid alt-proj-img align-right', 'title' => 'Screens hot of the website].']);
          } else {
           echo '<img src="'. get_stylesheet_directory_uri() . '/imgs/UnderConstruction.png" class="img img-fluid alt-proj-img align-right"><img src="'. get_stylesheet_directory_uri() . '/imgs/WalkingCone.gif" class="img img-fluid" id="cone">';
         } ?>
