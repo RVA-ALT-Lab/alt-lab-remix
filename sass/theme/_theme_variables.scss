@@ -5,5 +5,28 @@
 // Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
 // Just add your color code here, compile the theme.scss file to change this color everywhere
 
-$font-family-sans-serif:Arial, sans-serif;
-$brand-primary:         #7852B2; //#ff6d5a
+$font-family-sans-serif:        Arial, sans-serif;
+// $brand-primary:         #7852B2; //#ff6d5a
+$brand-primary:                #292b2c; //#FFBA00
+
+
+// Stuff from understrap.scss
+$gray-light:                    #e2dddd; //understap.scss check
+$gray-lighter:                  #faf9f9; //understap.scss check
+$brand-success:                 #faf9f9; //understap.scss check
+$brand-inverse:                 #faf9f9; //understap.scss check
+$nav-link-padding:              0;
+
+// Stuff from _child_theme_variables.scss
+// Basics of a navbar
+$navbar-height:                    100px;
+$navbar-margin-bottom:             0px;
+$navbar-border-radius:             0px;
+
+$vcu-gold:						 #FFBA00;
+$vcu-gray:   					 #63656A; // matt is using 9B9B9B
+
+$vcu-orange: 					#E57200;
+$vcu-aqua:						#00B3BE;
+
+$light-gray:					#e2dddd; // matt is using 979797

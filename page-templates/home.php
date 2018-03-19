@@ -11,28 +11,28 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <div id="home-wrapper">
-	<div class="container" id="home-content">
-	<!--Top logo Section-->
-	  <div class="top-logo-area">
-	    <div class="row home-page">
-	      <div class="col-md-6 wavy">
-	        <div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/callout-balloon.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/callout-ballon.png'" class="comment-bubble" aria-hidden="true"></div>
-					<h1 class="alt-lab-stacked" id="top">ALT</h1>
-					<h1 class="alt-lab-upsidedown">LAB</h1>
-	        <div class="alt-lab-spelled-out">Academic Learning Transformation Lab</div>
-	      </div>
-	      <div class="col-md-6" id="content">
-	        <div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/gear.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/gear.png'" class="gear" aria-hidden="true"></div>
-	        <div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.png'" class="hand" aria-hidden="true"></div>
-	        <?php while ( have_posts() ) : the_post(); ?>
-				<?php the_content();?>
-	        <?php endwhile; // end of the loop. ?>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+	<div id="data"></div>
+		<div class="container" id="home-content">
+			<div class="top-logo-area">
+				<div class="row home-page">
+					<div class="col-md-6 wavy">
+						<div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/callout-balloon.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/callout-ballon.png'" class="comment-bubble" aria-hidden="true"></div>
+						<h1 class="alt-lab-stacked" id="top">ALT</h1>
+						<h1 class="alt-lab-upsidedown">LAB</h1>
+						<div class="alt-lab-spelled-out">Academic Learning Transformation Lab</div>
+					</div>
+					<div class="col-md-6" id="content">
+						<div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/gear.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/gear.png'" class="gear" aria-hidden="true"></div>
+						<div style="background-image:url(<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.svg)" onerror="this.onerror=null; this.src='<?php echo get_stylesheet_directory_uri();?>/imgs/handoutline.png'" class="hand" aria-hidden="true"></div>
+						<?php while ( have_posts() ) : the_post(); ?>
+					<?php the_content();?>
+						<?php endwhile; // end of the loop. ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div id="wrappery"></div>
 </div>
-<!--End Top logo Section-->
 
 <div class="container-fluid" id="home-container">
   <div class="container white">

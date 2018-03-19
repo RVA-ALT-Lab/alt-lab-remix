@@ -6,11 +6,14 @@ body {
 
 a {
   color: $brand-primary;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
 a:hover {
   text-decoration: none;
-  color: $vcu-aqua;
+  color: $brand-primary;
+  border-bottom: 1px solid rgba(255,186,0,.8);
 }
 
 h1.navbar-brand a, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-toggler, .navbar-inverse .navbar-toggler:focus, .navbar-inverse .navbar-toggler:hover {
@@ -44,6 +47,9 @@ main {
   margin: 0 auto;
 }
 
+.bg-inverse {
+    background-color: #292b2c!important;
+}
 
 /*********************************
 PROJECT PAGE
@@ -336,8 +342,20 @@ FACULTY PAGE
 HOME PAGE
 *********************************/
 
+// #home-wrapper {
+//   border: 4px solid red;
+// }
+
 #home-wrapper, #home-content .row {
     background-color: rgba(255, 186, 0, 0.8);
+}
+
+#home-content {
+  // border: 4px solid blue;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  margin: 0 5% 0 5%;
 }
 
 #home-content .row {
@@ -347,6 +365,13 @@ HOME PAGE
 #home-container {
   margin: 0 auto;
 }
+
+.top-logo-area {
+  position: absolute;
+  // border: 4px solid green;
+}
+
+
 
 #vcu-online {
 	float: left;
@@ -362,7 +387,7 @@ HOME PAGE
 	max-width: 190px;
 }
 
-#vcu-online .monotone {
+#vcu-online .monotone { 
 	position: absolute;
 }
 
@@ -446,6 +471,7 @@ HOME PAGE
 .wavy {
   background: url("../imgs/line-poster-0831.png") no-repeat;
   background-position: 50%;
+  // position: absolute;
 }
 
 .alt-lab-spelled-out {
@@ -456,6 +482,7 @@ HOME PAGE
   letter-spacing: 3px;
   text-align: center;
   color: #000;
+  // position: absolute;
 }
 
 .we-create {
@@ -466,7 +493,8 @@ HOME PAGE
   color: #000;
   text-align: left;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
+  line-height: 1.2em;
+  // position: absolute;
 }
 
 .question {
@@ -477,6 +505,11 @@ HOME PAGE
   font-size: 2.7em;
   text-align: left;
   line-height: 1.4em;
+  // position: absolute;
+}
+
+.question a:hover {
+  border-bottom: none;
 }
 
 .comment-bubble {
@@ -497,14 +530,14 @@ HOME PAGE
   background-repeat: no-repeat;
 }
 
-.gear {
-  position: absolute;
-  left: 500px;
-  top: 30px;
-  width: 100px;
-  height: 100px;
-  background-repeat: no-repeat;
-}
+// .gear {
+//   position: absolute;
+//   left: 500px;
+//   top: 30px;
+//   width: 100px;
+//   height: 100px;
+//   background-repeat: no-repeat;
+// }
 
 .wrench {
   position: absolute;
@@ -541,6 +574,7 @@ NAVIGATION
   text-transform: uppercase;
   color: rgba(99,101,106,0.8);
   border-bottom: 1px dashed #9B9B9B;
+  padding: 0 0 10px 0;
 }
 
 .home-details {
@@ -800,16 +834,16 @@ TOP CONTENT UNDER NAVIGATION
 }
 
 .article-main-body p a {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .article-main-body p a:hover {
-  font-weight: 400;
+  font-weight: 500;
   border-bottom: 1px solid #fec850;
-  padding: 0 0 2px 0;
-  transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
+  // padding: 0 0 2px 0;
+  // transition: all 0.1s ease-in-out;
+  // -webkit-transition: all 0.1s ease-in-out;
+  // -o-transition: all 0.1s ease-in-out;
 }
 
 /*
@@ -898,18 +932,85 @@ FAQ PAGE
 }
 
 
-@media only screen and (max-width : 800px) {
+/*********************************
+ARROWS THAT TRACK CURSOR
+*********************************/
+
+#quiver {
+  border: 1px solid green;
+  height: 20px;
+  // color: red;
+  width: 50px;
+  height: 50px;
+}
+
+.arrow {
+  // background-color: #424242;
+  width:45px;
+  height:45px;
+  display:inline-block;
+  	background-image: url("http://rampages.us/playgroundforme/wp-content/uploads/sites/26581/2018/03/Arrow16up_SWh.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1.5em;
+}
+
+#wrappery {
+  width:100%;
+  height: 500px;
+  margin-bottom: 5px;
+  // border: 3px solid black;
+}
+
+// #data {
+//   border: 1px solid red;
+//   position: absolute;
+//   margin: 20px;
+//   width: 50px;
+//   height: 50px;
+// }
+
+/*********************************
+@MEDIA JUNK
+*********************************/
+
+@media only screen and (max-width : 768px) {
 .faculty-project-item {
     width: 50%;
   }
+  #wrappery {
+    width:100%;
+    height: 800px;
+  }
+  .we-create {
+    padding-top: 0;
+  }
+  .wrench {
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    width: 115px;
+    height: 100px;
+    background-repeat: no-repeat;
+  }
+
+  .comment-bubble {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+  }
+
 }
 
 
 @media only screen and (max-width : 580px) {
   .container-fluid {
     width: 100%;
-    margin: 10px auto;
-    padding: 10px;
+    // margin: 10px auto;
+    // padding: 10px;
   }
 
   .faculty-projects {
@@ -924,4 +1025,30 @@ FAQ PAGE
     padding-top: 0;
   }
 
+  .container {
+    // width: 100%;
+    margin: 0;
+  }
+
+  #home-content {
+    // border: 4px solid blue;
+    // width: 100%;
+    z-index: 2;
+    position: absolute;
+    margin: 0;
+  }
+  
+  #home-container {
+    margin: 0 auto;
+  }
+  
+  .top-logo-area {
+    position: absolute;
+    // border: 4px solid green;
+    margin: 0;
+  }
+
+  .wavy {
+    background: transparent;
+  }
 }
